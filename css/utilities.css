@@ -145,8 +145,7 @@
 
 .flex-grid .row {
   display: flex;
-  /* no need for flex-wrap because in .flex-grid .column, we already set flex to 25% and max-width to 25%. they will always remain in 25%, hence they cant stack to top of each other. */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   padding: 0 4px;
 }
 
@@ -154,4 +153,8 @@
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+}
+
+.flex-grid img {
+  height: 50%;
 }
